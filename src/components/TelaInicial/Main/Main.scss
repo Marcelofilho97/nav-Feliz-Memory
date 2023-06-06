@@ -1,0 +1,90 @@
+.text-container{
+  //border: 1px solid black;
+
+  display: block;
+  justify-content: center;
+
+  justify-items: center;
+  align-items: center;
+
+  //largura e altura máximas
+  max-width: 600px;
+  max-height: 400px;
+
+  //margens
+  margin-top: -5rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  p {
+    position: absolute;
+    // texto
+    font-size: 1rem;
+    text-align: center;
+
+    // largura e altura
+    max-width: 400px;
+    max-height: 250px;
+
+    // margens
+    margin-left: 2rem;
+    margin-top: 3rem;
+    z-index: 1;
+  }
+
+  h3 {
+    position: absolute;
+    // texto
+    font-size: 1.2rem;
+    text-align: center;
+
+    // margens
+    margin-left: 10rem;
+    margin-top: 15rem;
+    z-index: 1;
+  }
+
+  .SpeechBubble {
+    position: static;
+    // margens, posição e animação
+    margin-right: auto;
+    margin-left: auto;
+
+    z-index: -1;
+    animation: speechBubble-float 3s ease-in-out infinite;
+  }
+}
+
+.Girl{
+  position: static;
+  //border: 1px solid red;
+  //margens
+  margin-top: -13rem;
+  margin-left: 40rem;
+
+  z-index: 1;
+
+  //animação
+  animation: girl-float 2s ease-in-out infinite;
+}
+
+
+//animações 
+@keyframes speechBubble-float{
+	0%,100%{
+		transform:translatey(0)
+	}
+	50%{
+		transform:translatey(-8px)
+	}
+}
+
+
+@keyframes girl-float{
+	0%,100%{
+		transform:translatey(0)
+	}
+	50%{
+		transform:translatey(-15px)
+	}
+}

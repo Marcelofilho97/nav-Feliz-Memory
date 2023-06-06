@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ScreenMemoryEasyLevel{
+  position: absolute;
+
+  width: 100%;
+  max-width: 1920px;
+
+  height: 100%;
+  max-height: 1080px;
+
+  background: url(../../assets/Memory/bg-memory.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 30%;
+  background-size: cover;
+
+  .cards-content {
+    max-width: 480px;
+    min-width: 320px;
+    margin: 0 auto;
+  }
+}
